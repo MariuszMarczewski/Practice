@@ -53,28 +53,27 @@ public class MorseCoder {
 
             for (int i = 0; i < textTab.length; i++) {
 
+                switch (textTab[i]) {
+                    case ' ':
+                        textTab[i] = '/';
+
+                    case '!':
+                        textTab[i] = '/';
+
+                    case ',':
+                        textTab[i] = '/';
+
+                    case '.':
+                        textTab[i] = '/';
+
+                    case '?':
+                        textTab[i] = '/';
+
+                    case ';':
+                        textTab[i] = '/';
+                }
+
                       if (textTab[i] == letters.getKey()) {
-
-//                            switch (textTab[i]) {
-//                                case ' ':
-//                                    textTab[i] = '/';
-//
-//                                case '!':
-//                                    textTab[i] = '/';
-//
-//                                case ',':
-//                                    textTab[i] = '/';
-//
-//                                case '.':
-//                                    textTab[i] = '/';
-//
-//                                case '?':
-//                                    textTab[i] = '/';
-//
-//                                case ';':
-//                                    textTab[i] = '/';
-//                            }
-
 
                           StringBuilder sb = new StringBuilder();
 
@@ -89,63 +88,4 @@ public class MorseCoder {
 
         }
     }
-
-//
-//        for (Map.Entry<String, String> letters : dictionary.entrySet()) {
-//
-////
-//////            char[] keys =  letters.getKey().toString().toCharArray();
-//////            char[] values = letters.getValue().toString().toCharArray();
-////
-////            for (int i = 0; i <str.length; i++) {
-////
-////
-////                switch(textTab[i]){
-////                    case " ":
-////                        textTab[i] = "/";
-////
-////                    case ",":
-////                        textTab[i] = "/";
-////
-////                    case "'":
-////                        textTab[i] = "/";
-////
-////                    case "!":
-////                        textTab[i] = "/";
-////
-////                    case "?":
-////                        textTab[i] = "/";
-////
-////                    case ";":
-////                        textTab[i] = "/";
-////                }
-////
-////                if (textTab[i] == letters.getKey()){
-////                    textTab[i] = letters.getValue();
-////
-////
-////
-////                    textFinal = textFinal + letters.getValue() + " ";
-////                }
-////
-////
-////
-////
-////
-////            }
-////        }
-////
-////        System.out.println(textFinal);
-////    }
-////}
-////
-////
-////
-////
-//////            for (int i = 0; i < textTab.length; i++) {
-//////
-//////
-//////        }
-//////
-
 
