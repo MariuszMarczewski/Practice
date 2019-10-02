@@ -65,7 +65,6 @@ public class MorseCoder {
                             textFinal = sb.append(letters.getValue()).append(" ").toString();
 
                             System.out.println(textFinal);
-
                         }
                 }
             }
