@@ -1,7 +1,7 @@
 package MorseCoder;
 
 import java.io.OutputStream;
-import java.sql.SQLOutput;
+
 import java.util.*;
 
 public class MorseCoder {
@@ -35,6 +35,13 @@ public class MorseCoder {
         dictionary.put('X', "_.._");
         dictionary.put('Y', "._.");
         dictionary.put('Z', "__..");
+        dictionary.put('/', "/");
+        dictionary.put('!', "/");
+        dictionary.put('?', "/");
+        dictionary.put(',', "/");
+        dictionary.put('.', "/");
+        dictionary.put(' ', "/");
+
 
         System.out.println("Hello, welcome in the Morse Coder!!!");
 
@@ -48,44 +55,21 @@ public class MorseCoder {
 
         String textFinal = "";
 
-        for (Map.Entry<Character, String> letters : dictionary.entrySet()) {
+        for (int i = 0; i < textTab.length; i++) {
 
+            for (Map.Entry<Character, String> letters : dictionary.entrySet()) {
 
-            for (int i = 0; i < textTab.length; i++) {
+                        if (textTab[i] == letters.getKey()) {
 
-                switch (textTab[i]) {
-                    case ' ':
-                        textTab[i] = '/';
+                            StringBuilder sb = new StringBuilder();
+                            textFinal = sb.append(letters.getValue()).append(" ").toString();
 
-                    case '!':
-                        textTab[i] = '/';
-
-                    case ',':
-                        textTab[i] = '/';
-
-                    case '.':
-                        textTab[i] = '/';
-
-                    case '?':
-                        textTab[i] = '/';
-
-                    case ';':
-                        textTab[i] = '/';
-                }
-
-                      if (textTab[i] == letters.getKey()) {
-
-                          StringBuilder sb = new StringBuilder();
-
-                          textFinal += sb.append(letters.getValue()).append(" ").toString();
-
+                            System.out.println(textFinal);
 
                         }
                 }
             }
-
-            System.out.println(textFinal);
-
         }
     }
+
 
