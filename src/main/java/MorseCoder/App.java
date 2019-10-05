@@ -1,0 +1,4 @@
+package MorseCoder;
+
+class App {
+}

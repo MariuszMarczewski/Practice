@@ -2,7 +2,6 @@ package MinMaxValue;
 
 public class Factory {
 
-
     public MinMaxValueInterface produce(MinMaxValueType type){
 
         if(MinMaxValueType.MIN.equals(type)){
@@ -15,7 +14,4 @@ public class Factory {
 
         return null;
     }
-
-
-
 }

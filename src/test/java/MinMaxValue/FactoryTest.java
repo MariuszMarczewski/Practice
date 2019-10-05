@@ -11,14 +11,12 @@ public class FactoryTest {
     @Test
     public void shouldProduceMin() {
 
-
 //        given
         final MinMaxValueType type = MinMaxValueType.MIN;
 
 //        when
 
         MinMaxValueInterface result = factory.produce(type);
-
 
 //        then
         assertTrue(result instanceof MinMaxValueInterface);

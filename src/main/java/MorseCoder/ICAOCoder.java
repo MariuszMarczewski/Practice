@@ -1,55 +1,53 @@
 package MorseCoder;
 
-import java.io.OutputStream;
-
 import java.util.*;
 
-class MorseCoder implements Coder {
+class ICAOCoder implements Coder {
 
     @Override
     public void start() {
-        System.out.println("Hello, welcome in the Morse Coder!!!");
+        System.out.println("Welcome to the ICAO Coder!");
     }
+    
 
     public static void main(String[] args) {
 
-        MorseCoder c = new MorseCoder();
+        ICAOCoder c = new ICAOCoder();
         c.start();
 
         Map<Character, String> dictionary = new HashMap<>();
-        dictionary.put('A', "._");
-        dictionary.put('B', "_...");
-        dictionary.put('C', "_._.");
-        dictionary.put('D', "_..");
-        dictionary.put('E', ".");
-        dictionary.put('F', ".._");
-        dictionary.put('G', "__.");
-        dictionary.put('H', "....");
-        dictionary.put('I', "..");
-        dictionary.put('J', ".___");
-        dictionary.put('K', "_._");
-        dictionary.put('L', "._..");
-        dictionary.put('M', "__");
-        dictionary.put('N', "_.");
-        dictionary.put('O', "___");
-        dictionary.put('P', ".__.");
-        dictionary.put('Q', "__._");
-        dictionary.put('R', "._.");
-        dictionary.put('S', "...");
-        dictionary.put('T', "_");
-        dictionary.put('U', ".._");
-        dictionary.put('V', "..._");
-        dictionary.put('W', ".__");
-        dictionary.put('X', "_.._");
-        dictionary.put('Y', "._.");
-        dictionary.put('Z', "__..");
+        dictionary.put('A', "Alpha");
+        dictionary.put('B', "Bravo");
+        dictionary.put('C', "Charlie");
+        dictionary.put('D', "Delta");
+        dictionary.put('E', "Echo");
+        dictionary.put('F', "Foxtrot");
+        dictionary.put('G', "Golf");
+        dictionary.put('H', "Hotel");
+        dictionary.put('I', "India");
+        dictionary.put('J', "Juliett");
+        dictionary.put('K', "Kilo");
+        dictionary.put('L', "Lima");
+        dictionary.put('M', "Mike");
+        dictionary.put('N', "November");
+        dictionary.put('O', "Oscar");
+        dictionary.put('P', "Papa");
+        dictionary.put('Q', "Quebec");
+        dictionary.put('R', "Romeo");
+        dictionary.put('S', "Sierra");
+        dictionary.put('T', "Tango");
+        dictionary.put('U', "Uniform");
+        dictionary.put('V', "Victor");
+        dictionary.put('W', "Whiskey");
+        dictionary.put('X', "X-Ray");
+        dictionary.put('Y', "Yankee");
+        dictionary.put('Z', "Zulu");
         dictionary.put('/', "/");
         dictionary.put('!', "/");
         dictionary.put('?', "/");
         dictionary.put(',', "/");
         dictionary.put('.', "/");
         dictionary.put(' ', "/");
-
 
         Scanner in = new Scanner(System.in);
         System.out.println("Give a sample of text to be translate: ");
@@ -76,6 +74,3 @@ class MorseCoder implements Coder {
         }
     }
 }
-
-
-
